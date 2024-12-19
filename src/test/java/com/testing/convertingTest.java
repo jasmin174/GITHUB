@@ -29,4 +29,17 @@ public class convertingTest {
         // THEN
         assertEquals(expected,result);
     }
+    @Test
+    public void convert_3_into_II() {
+        // GIVEN
+        int input = 3;
+        String expected = "III";
+        ArabicRomanNumerals converter = new ArabicRomanNumerals();
+
+        // WHEN
+        String result = converter .convert(input);
+
+        // THEN
+        assertEquals(expected,result);
+    }
 }
