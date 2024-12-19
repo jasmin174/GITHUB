@@ -16,4 +16,17 @@ public class convertingTest {
         // THEN
         assertEquals(expected,result);
     }
+    @Test
+    public void convert_1_into_II() {
+        // GIVEN
+        int input = 2;
+        String expected = "II";
+        ArabicRomanNumerals converter = new ArabicRomanNumerals();
+
+        // WHEN
+        String result = converter .convert(input);
+
+        // THEN
+        assertEquals(expected,result);
+    }
 }
