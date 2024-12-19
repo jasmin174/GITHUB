@@ -82,6 +82,7 @@ public class convertingTest {
         // THEN
         assertEquals(expected,result);
     }
+    @Test
     public void convert_20_into_XXX() {
         // GIVEN
         int input = 30;
