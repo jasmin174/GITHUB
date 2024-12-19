@@ -56,4 +56,30 @@ public class convertingTest {
         // THEN
         assertEquals(expected,result);
     }
+    @Test
+    public void convert_10_into_X() {
+        // GIVEN
+        int input = 10;
+        String expected="X";
+        ArabicRomanNumerals converter = new ArabicRomanNumerals();
+
+        // WHEN
+        String result = converter .convert(input);
+
+        // THEN
+        assertEquals(expected,result);
+    }
+    @Test
+    public void convert_20_into_XX() {
+        // GIVEN
+        int input = 20;
+        String expected="X";
+        ArabicRomanNumerals converter = new ArabicRomanNumerals();
+
+        // WHEN
+        String result = converter .convert(input);
+
+        // THEN
+        assertEquals(expected,result);
+    }
 }
