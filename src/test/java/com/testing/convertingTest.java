@@ -73,7 +73,19 @@ public class convertingTest {
     public void convert_20_into_XX() {
         // GIVEN
         int input = 20;
-        String expected="X";
+        String expected="XX";
+        ArabicRomanNumerals converter = new ArabicRomanNumerals();
+
+        // WHEN
+        String result = converter .convert(input);
+
+        // THEN
+        assertEquals(expected,result);
+    }
+    public void convert_20_into_XXX() {
+        // GIVEN
+        int input = 30;
+        String expected="XXX";
         ArabicRomanNumerals converter = new ArabicRomanNumerals();
 
         // WHEN
