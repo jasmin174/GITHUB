@@ -83,10 +83,23 @@ public class convertingTest {
         assertEquals(expected,result);
     }
     @Test
-    public void convert_20_into_XXX() {
+    public void convert_30_into_XXX() {
         // GIVEN
         int input = 30;
         String expected="XXX";
+        ArabicRomanNumerals converter = new ArabicRomanNumerals();
+
+        // WHEN
+        String result = converter .convert(input);
+
+        // THEN
+        assertEquals(expected,result);
+    }
+    @Test
+    public void convert_11_into_XI() {
+        // GIVEN
+        int input = 11;
+        String expected="XI";
         ArabicRomanNumerals converter = new ArabicRomanNumerals();
 
         // WHEN

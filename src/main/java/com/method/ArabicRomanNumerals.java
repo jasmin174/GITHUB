@@ -1,18 +1,24 @@
 package com.method;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class ArabicRomanNumerals {
- public String convert (int nbr){
-  StringBuilder resultat= new StringBuilder();
-  if(nbr>=10){
-   for(int i=0;i<nbr/10;i++){
-    resultat.append("X");
-   }
+
+ public  String convert(int nbr){
+  StringBuilder resultat = new StringBuilder();
+
+  int reste = nbr;
+
+  while (reste >= 10) {
+   resultat.append("X");
+   reste -= 10;
   }
-  else{
-   for(int i=0;i<nbr;i++){
-    resultat.append("I");
-   }}
-   return resultat.toString();
+  while (reste >= 1) {
+   resultat.append("I");
+   reste -= 1;
   }
 
-}
+  return resultat.toString();
+}}
